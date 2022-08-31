@@ -1,0 +1,32 @@
+.promo {
+  .container {
+    padding: 160px 0 0 120px;
+    height: 720px;
+    background: url(../../public/images/Promo.jpg) center/cover no-repeat;
+  }
+  &__block {
+    width: 515px;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__search {
+    margin-top: 40px;
+    p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  &__input {
+    margin-top: 16px;
+    input {
+      padding: 20px 90px 20px 20px;
+      border-radius: 5px 0 0 5px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #222222;
+    }
+  }
+}

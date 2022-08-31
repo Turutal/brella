@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 1330px;
+  height: 90px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 380px;
+    width: 585px;
+    &-item {
+      &:last-child {
+        margin-right: 70px;
+      }
+    }
+  }
+  .button {
+    margin-right: 30px;
+    padding: 10px 14px;
+  }
+  &__dropDown {
+    margin-right: 30px;
+  }
+}

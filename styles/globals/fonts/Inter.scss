@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inter'),
+    url('#{$pathToFonts}/Inter/Inter-Regular.ttf') format('truetype'),
+    url('#{$pathToFonts}/Inter/Inter-Regular.otf') format('opentype');
+}

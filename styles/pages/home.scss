@@ -1,0 +1,22 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  color: #214e41;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+
+  @media (max-width: 1464px) {
+    padding: 0 24px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 0 15px;
+  }
+}
+
+.advantages {
+  padding: 213px 180px 120px;
+}

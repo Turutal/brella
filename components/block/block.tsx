@@ -13,7 +13,7 @@ const Block = ({ title, subtitle, text, buttonText }: IProps) => {
       <h2 className="block__title">{title}</h2>
       <h3 className="block__subtitle">{subtitle}</h3>
       <p className="block__text">{text}</p>
-      <Button text={buttonText} />
+      <Button text={buttonText} block={true} />
     </div>
   );
 };

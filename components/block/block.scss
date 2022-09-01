@@ -1,11 +1,13 @@
 .block {
   max-width: 555px;
+
   &__title {
     font-size: 13px;
     text-transform: uppercase;
 
     color: #43806c;
   }
+
   &__subtitle {
     margin-top: 20px;
     font-size: 36px;
@@ -14,6 +16,7 @@
 
     color: #214e41;
   }
+
   &__text {
     margin: 34px 0 26px;
     font-size: 18px;

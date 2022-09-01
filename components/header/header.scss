@@ -12,16 +12,19 @@
     justify-content: space-between;
     margin-left: 380px;
     width: 585px;
-    &-item {
-      &:last-child {
-        margin-right: 70px;
-      }
+  }
+
+  &__nav-item {
+    &:last-child {
+      margin-right: 70px;
     }
   }
+
   .button {
     margin-right: 30px;
     padding: 10px 14px;
   }
+
   &__dropDown {
     margin-right: 30px;
   }

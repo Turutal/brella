@@ -14,7 +14,7 @@ interface IProps {
 
 const Header = ({ component, arr }: IProps) => {
   return (
-    <div className="header">
+    <header className="header">
       <div className="header__logo">{component}</div>
       <nav className="header__nav">
         {arr.map((item) => (
@@ -33,7 +33,7 @@ const Header = ({ component, arr }: IProps) => {
         </select>
       </div>
       <button className="header__button-lang">EN</button>
-    </div>
+    </header>
   );
 };
 

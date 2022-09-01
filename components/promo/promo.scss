@@ -4,14 +4,17 @@
     height: 720px;
     background: url(../../public/images/Promo.jpg) center/cover no-repeat;
   }
+
   &__block {
     width: 515px;
   }
+
   &__title {
     font-size: 36px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
   }
+
   &__search {
     margin-top: 40px;
     p {
@@ -19,6 +22,7 @@
       font-weight: bold;
     }
   }
+
   &__input {
     margin-top: 16px;
     input {

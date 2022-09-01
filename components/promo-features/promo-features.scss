@@ -7,15 +7,18 @@
   background-color: #fff;
   box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
   border-radius: 5px;
+
   &-item {
     display: flex;
     justify-content: space-between;
     width: 356px;
   }
+
   &-title {
     font-size: 16px;
     font-weight: normal;
   }
+
   &-text {
     margin-top: 7px;
     font-size: 14px;

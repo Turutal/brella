@@ -18,5 +18,9 @@
 }
 
 .advantages {
-  padding: 213px 180px 120px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 213px 180px 120px;
+  }
 }

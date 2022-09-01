@@ -33,12 +33,17 @@ const Home: NextPage = () => {
         />
         <Promo />
         <section className="advantages">
-          <Block
-            title={`Why Brella?`}
-            subtitle={`Today, any health insurance deductible can feel like a high deductible.`}
-            text={`Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.`}
-            buttonText={'See our plan'}
-          />
+          <div className="container">
+            <Block
+              title={`Why Brella?`}
+              subtitle={`Today, any health insurance deductible can feel like a high deductible.`}
+              buttonText={'See our plan'}
+              text={`Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.`}
+            />
+            <picture>
+              <img src="/images/insurance-frame.png" alt="insurance" />
+            </picture>
+          </div>
         </section>
       </main>
 

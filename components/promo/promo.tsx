@@ -21,19 +21,19 @@ const Promo = () => {
         <PromoFeatures
           arr={[
             {
-              url: '../../public/images/umbrella.png',
+              url: '/images/umbrella.png',
               title: 'More coverage',
               text: 'Brella covers 13,000+ injuries and illnesses from concussions to cancer.',
               id: 1,
             },
             {
-              url: '../../public/images/check.png',
+              url: '/images/check.png',
               title: 'Less hassle',
               text: 'One easy-to-manage plan with paperless install and online admin tools.',
               id: 2,
             },
             {
-              url: '../../public/images/cash.png',
+              url: '/images/cash.png',
               title: 'Faster benefits',
               text: 'Brella pays claims in hours–not weeks so your people can rest easy.',
               id: 3,

@@ -1,0 +1,30 @@
+.contact {
+  .container {
+    padding-right: 177px;
+    background-color: #e3eeed;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    margin-top: 144px;
+    width: 420px;
+  }
+
+  &__text {
+    margin-bottom: 46px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .button {
+    margin-top: 14px;
+    padding: 13px 24px;
+  }
+}

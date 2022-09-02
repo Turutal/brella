@@ -1,0 +1,23 @@
+.about__stat {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  &-item {
+    max-width: 260px;
+  }
+
+  &-item > b {
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: bold;
+    color: #f0a446;
+  }
+
+  &-item > p {
+    margin-top: 13px;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+}

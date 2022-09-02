@@ -1,0 +1,36 @@
+.news {
+  .container {
+    padding: 120px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 355px;
+  }
+
+  &__img {
+    max-height: 236px;
+  }
+
+  &__item-title {
+    margin-top: 21px;
+    font-size: 11px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    color: #43806c;
+  }
+
+  &__item-subtitle {
+    display: block;
+    margin-top: 15px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

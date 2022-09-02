@@ -2,6 +2,10 @@
   background-color: #43806c;
   color: #fff;
   border-radius: 5px;
+
+  &__none {
+    display: none;
+  }
 }
 
 .promo__button {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button, PromoFeatures } from 'components';
 
 const Promo = () => {
@@ -18,6 +17,7 @@ const Promo = () => {
             </div>
           </div>
         </div>
+
         <PromoFeatures
           arr={[
             {

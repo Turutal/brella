@@ -19,8 +19,30 @@
 
 .advantages {
   .container {
-    display: flex;
-    justify-content: space-between;
     padding: 213px 180px 120px;
+  }
+
+  .block__wrapper {
+    max-width: 478px;
+  }
+}
+
+.mobile {
+  .container {
+    padding: 0 141px 0 235px;
+  }
+
+  .block__wrapper {
+    order: 2;
+  }
+}
+
+.employers {
+  .container {
+    padding: 126px 0 112px 120px;
+    background: url('../../public/images/employers.jpg') center/cover no-repeat;
+  }
+  picture {
+    display: none;
   }
 }

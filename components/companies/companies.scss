@@ -1,0 +1,35 @@
+.companies {
+  .container {
+    padding: 120px 122px 125px 122px;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.37);
+  }
+
+  &__title {
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 115px;
+    padding: 0 75px;
+  }
+
+  &__button-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__button-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

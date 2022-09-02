@@ -1,6 +1,11 @@
 .block {
-  max-width: 555px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  &__wrapper {
+    max-width: 555px;
+  }
   &__title {
     font-size: 13px;
     text-transform: uppercase;

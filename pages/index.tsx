@@ -56,7 +56,11 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <About />
+        <section className="about">
+          <div className="container">
+            <About />
+          </div>
+        </section>
 
         <section className="mobile">
           <div className="container">
@@ -86,41 +90,54 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <Companies
-          arr={[
-            { name: 'brewer lane', url: '/images/brewer-lane.png', id: 1 },
-            { name: 'two sigma', url: '/images/two-sigma.png', id: 2 },
-            { name: 'digitals', url: '/images/digitals.png', id: 3 },
-            { name: 'founder', url: '/images/founder.png', id: 4 },
-            { name: 'symphony', url: '/images/symphony.png', id: 5 },
-          ]}
-        />
+        <section className="companies">
+          <div className="container">
+            <Companies
+              arr={[
+                { name: 'brewer lane', url: '/images/brewer-lane.png', id: 1 },
+                { name: 'two sigma', url: '/images/two-sigma.png', id: 2 },
+                { name: 'digitals', url: '/images/digitals.png', id: 3 },
+                { name: 'founder', url: '/images/founder.png', id: 4 },
+                { name: 'symphony', url: '/images/symphony.png', id: 5 },
+              ]}
+            />
+          </div>
+          <span className="line"></span>
+        </section>
 
-        <News
-          arr={[
-            {
-              url: '/images/podcast.jpg',
-              title: 'Podcast',
-              subtitle:
-                'Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald',
-              id: 1,
-            },
-            {
-              url: 'images/insurance.jpg',
-              title: 'Insurance Innovation',
-              subtitle: 'How to Design Simpler Insurance Benefits',
-              id: 2,
-            },
-            {
-              url: 'images/benefits.jpg',
-              title: 'Benefits Strategy',
-              subtitle: 'Executive Benefits Outlook with Dan Aceti',
-              id: 3,
-            },
-          ]}
-        />
+        <section className="news">
+          <div className="container">
+            <News
+              arr={[
+                {
+                  url: '/images/podcast.jpg',
+                  title: 'Podcast',
+                  subtitle:
+                    'Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald',
+                  id: 1,
+                },
+                {
+                  url: 'images/insurance.jpg',
+                  title: 'Insurance Innovation',
+                  subtitle: 'How to Design Simpler Insurance Benefits',
+                  id: 2,
+                },
+                {
+                  url: 'images/benefits.jpg',
+                  title: 'Benefits Strategy',
+                  subtitle: 'Executive Benefits Outlook with Dan Aceti',
+                  id: 3,
+                },
+              ]}
+            />
+          </div>
+        </section>
 
-        <Contact />
+        <section className="contact">
+          <div className="container">
+            <Contact />
+          </div>
+        </section>
       </main>
 
       <footer></footer>

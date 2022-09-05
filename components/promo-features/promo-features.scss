@@ -1,8 +1,10 @@
 .promo__features {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
   display: flex;
   justify-content: space-between;
-  margin-top: 205px;
-  max-width: 1200px;
+  width: 100%;
   padding: 50px;
   background-color: #fff;
   box-shadow: 1px 6px 4px rgba(232, 230, 230, 0.8);

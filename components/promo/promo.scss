@@ -1,7 +1,12 @@
 .promo {
+  padding-bottom: 80px;
   .container {
-    padding: 160px 0 0 120px;
+    position: relative;
+    padding-top: 160px;
     height: 720px;
+  }
+
+  &__background {
     background: url(../../public/images/Promo.jpg) center/cover no-repeat;
   }
 

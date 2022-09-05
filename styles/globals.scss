@@ -1,3 +1,17 @@
 @import './globals/import.scss';
 @import '../components/import.scss';
 @import './pages/import.scss';
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+
+  @media (max-width: 1244px) {
+    padding: 0 24px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 0 15px;
+  }
+}

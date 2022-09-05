@@ -1,5 +1,3 @@
-import { Button } from 'components';
-
 interface IProps {
   title: string;
   subtitle: string;

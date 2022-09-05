@@ -12,26 +12,24 @@ interface IProps {
 
 const Companies = ({ arr }: IProps) => {
   return (
-    <section className="companies">
-      <div className="container">
-        <h2 className="companies__title">Proudly backed by</h2>
-        <ul className="companies__list">
-          {arr.map((item) => (
-            <li className="companies__list-item" key={item.id}>
-              <a href="#">
-                <img src={item.url} alt={item.name} />
-              </a>
-            </li>
-          ))}
-          <button className="companies__button-left">
-            <Icons.LeftButton />
-          </button>
-          <button className="companies__button-right">
-            <Icons.RightButton />
-          </button>
-        </ul>
-      </div>
-    </section>
+    <>
+      <h2 className="companies__title">Proudly backed by</h2>
+      <ul className="companies__list">
+        {arr.map((item) => (
+          <li className="companies__list-item" key={item.id}>
+            <a href="#">
+              <img src={item.url} alt={item.name} />
+            </a>
+          </li>
+        ))}
+        <button className="companies__button-left">
+          <Icons.LeftButton />
+        </button>
+        <button className="companies__button-right">
+          <Icons.RightButton />
+        </button>
+      </ul>
+    </>
   );
 };
 

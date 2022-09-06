@@ -8,8 +8,6 @@ const About = () => {
         subtitle={
           'No one can predict which health issues might come their way.'
         }
-        buttonText={' '}
-        className={'button__none'}
         text={`Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.`}
         url={'/images/about.png'}
       />

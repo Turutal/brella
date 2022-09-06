@@ -11,3 +11,4 @@ export { default as AboutStat } from './about-stat';
 export { default as Companies } from './companies';
 export { default as News } from './news';
 export { default as Contact } from './contact';
+export { default as Select } from './select';

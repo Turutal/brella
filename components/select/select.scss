@@ -1,0 +1,30 @@
+.select {
+  position: relative;
+  &__header {
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #cecece;
+    a {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      &:hover {
+        background-color: #cecece;
+      }
+    }
+  }
+
+  &__dropdown--show {
+    display: block;
+  }
+}

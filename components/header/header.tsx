@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from 'components';
+import { Button, Select } from 'components';
 
 interface Arr {
   text: string;
@@ -24,14 +24,7 @@ const Header = ({ component, arr }: IProps) => {
         ))}
       </nav>
       <Button text="Request a demo" />
-      <div className="header__dropDown">
-        <label htmlFor="login">Login</label>
-        <select name="login" id="login">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-      </div>
+      <Select />
       <button className="header__button-lang">EN</button>
     </header>
   );

@@ -3,25 +3,12 @@
   color: #fff;
   border-radius: 5px;
 
+  &--promo {
+    padding: 20px 35px;
+    border-radius: 0px 5px 5px 0;
+  }
+
   &__none {
     display: none;
   }
-}
-
-.promo__button {
-  padding: 20px 35px;
-  border-radius: 0px 5px 5px 0;
-}
-
-.block__button {
-  padding-bottom: 12px;
-  max-width: 107px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: center;
-  background-color: transparent;
-  color: #214e41;
-  border-radius: 0;
-  border-bottom: 2px solid #214e41;
 }

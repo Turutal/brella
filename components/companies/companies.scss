@@ -14,17 +14,26 @@
     padding: 0 75px;
   }
 
-  &__button-left {
+  .react-multiple-carousel__arrow--left {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  &__button-right {
+  .react-multiple-carousel__arrow--right {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .react-multi-carousel-track {
+    position: relative;
+    margin: 0 75px;
+  }
+
+  .react-multi-carousel-item {
+    width: 226px !important;
   }
 }

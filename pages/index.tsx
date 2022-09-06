@@ -51,7 +51,6 @@ const Home: NextPage = () => {
               buttonText={'See our plan'}
               text={`Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.`}
               url={'/images/insurance-frame.png'}
-              className={' '}
             />
           </div>
         </section>
@@ -70,7 +69,6 @@ const Home: NextPage = () => {
               buttonText={'Play Video'}
               text={`Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.`}
               url={'/images/mobile-app.png'}
-              className={' '}
             />
           </div>
         </section>
@@ -85,7 +83,6 @@ const Home: NextPage = () => {
                 'Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.'
               }
               url={'/images/mobile-app.png'}
-              className={' '}
             />
           </div>
         </section>
@@ -99,6 +96,8 @@ const Home: NextPage = () => {
                 { name: 'digitals', url: '/images/digitals.png', id: 3 },
                 { name: 'founder', url: '/images/founder.png', id: 4 },
                 { name: 'symphony', url: '/images/symphony.png', id: 5 },
+                { name: 'two sigma', url: '/images/two-sigma.png', id: 6 },
+                { name: 'digitals', url: '/images/digitals.png', id: 7 },
               ]}
             />
           </div>

@@ -9,11 +9,11 @@ interface ButtonProps {
 
 function Button({ text, promo, block, none }: ButtonProps) {
   const className = promo
-    ? 'promo__button'
+    ? 'button--promo'
     : block
-    ? 'block__button'
+    ? 'button--block'
     : none
-    ? 'button__none'
+    ? 'button--none'
     : '';
 
   return <button className={`button ${className}`}>{text}</button>;

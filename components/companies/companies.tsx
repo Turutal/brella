@@ -1,6 +1,6 @@
 import { Icons } from 'components';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React, { Component } from 'react';
+import Slider from 'react-slick';
 interface Arr {
   name: string;
   url: string;
@@ -12,22 +12,13 @@ interface IProps {
 }
 
 const Companies = ({ arr }: IProps) => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3, // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1, // optional, default to 1.
-    },
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    nextArrow: <Icons.LeftButton />,
   };
   return (
     <>
@@ -47,13 +38,15 @@ const Companies = ({ arr }: IProps) => {
           <Icons.RightButton />
         </button>
       </ul>
-      <Carousel responsive={responsive}>
-        {arr.map((item) => (
-          <div key={item.id}>
-            <img src={item.url} alt={item.name} />
-          </div>
-        ))}
-      </Carousel>
+      <div className="companies__slider">
+        <Slider {...settings}>
+          {arr.map((item) => (
+            <div key={item.id}>
+              <img src={item.url} alt={item.name} />
+            </div>
+          ))}
+        </Slider>
+      </div>
     </>
   );
 };

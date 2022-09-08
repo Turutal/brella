@@ -10,6 +10,7 @@ import {
   Companies,
   News,
   Contact,
+  Footer,
 } from 'components';
 
 const Home: NextPage = () => {
@@ -22,7 +23,6 @@ const Home: NextPage = () => {
         <link
           rel="stylesheet"
           type="text/css"
-          charset="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           arr={[{ num: 0 }, { num: 1 }, { num: 2 }]}
         /> */}
         <Header
-          component={<Icons.LogoIcon />}
+          component={<Icons.LogoIcon color={'#214E41'} />}
           arr={[
             { text: 'Our Plan', id: 1 },
             { text: 'Employers', id: 2 },
@@ -68,7 +68,39 @@ const Home: NextPage = () => {
 
         <section className="about">
           <div className="container">
-            <About />
+            <About
+              blockProps={{
+                title: 'one plan, more coverage',
+                subtitle:
+                  'No one can predict which health issues might come their way.',
+                text: `Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.`,
+                url: '/images/about.png',
+              }}
+              aboutProps={{
+                arr: [
+                  {
+                    title: '5K',
+                    text: 'covered injuries and illnesses from fractures and appendicitis to cancer',
+                    id: 1,
+                  },
+                  {
+                    title: '1X',
+                    text: 'more covered conditions than Accident and Critical Illness plans—combined',
+                    id: 2,
+                  },
+                  {
+                    title: '40%',
+                    text: 'plans are 100% guaranteed issue. No medical underwriting required',
+                    id: 3,
+                  },
+                  {
+                    title: '0',
+                    text: 'Zero limitations or exclusions for pre-existing conditions',
+                    id: 4,
+                  },
+                ],
+              }}
+            />
           </div>
         </section>
 
@@ -150,7 +182,77 @@ const Home: NextPage = () => {
         </section>
       </main>
 
-      <footer></footer>
+      <footer className="footer">
+        <div className="container">
+          <Footer
+            logoComponent={<Icons.LogoIcon color={'#fff'} />}
+            footerLinksJoin={{
+              title: 'Join Brella',
+              arr: [
+                {
+                  name: 'Our Plan',
+                  id: 1,
+                },
+                {
+                  name: 'Employers',
+                  id: 2,
+                },
+                {
+                  name: 'Brokers',
+                  id: 3,
+                },
+                {
+                  name: 'Members',
+                  id: 4,
+                },
+              ],
+            }}
+            footerLinksCompany={{
+              title: 'Company',
+              arr: [
+                {
+                  name: 'About',
+                  id: 1,
+                },
+                {
+                  name: 'Blog',
+                  id: 2,
+                },
+                {
+                  name: 'Careers',
+                  id: 3,
+                },
+                {
+                  name: 'Contact',
+                  id: 4,
+                },
+              ],
+            }}
+            footerSocialProps={{
+              arr: [
+                { component: <Icons.Linkedin />, id: 1 },
+                { component: <Icons.Twitter />, id: 2 },
+                { component: <Icons.Youtube />, id: 3 },
+              ],
+            }}
+            footerContactTitle={'Get the latest'}
+            footerContactsText={
+              'Sign up to receive benefits news and insights in your inbox once a month.'
+            }
+            footerContactsArrow={<Icons.RightButton />}
+            policyText={
+              'Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.'
+            }
+            underwrittenText={
+              'Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX'
+            }
+            address={
+              'Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at'
+            }
+            phoneNumber={'(844) 987-1070'}
+          />
+        </div>
+      </footer>
     </div>
   );
 };

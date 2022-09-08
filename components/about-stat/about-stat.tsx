@@ -4,7 +4,7 @@ interface Arr {
   id: number;
 }
 
-interface IProps {
+export interface IProps {
   arr: Arr[];
 }
 

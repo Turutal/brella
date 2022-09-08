@@ -12,3 +12,6 @@ export { default as Companies } from './companies';
 export { default as News } from './news';
 export { default as Contact } from './contact';
 export { default as Select } from './select';
+export { default as FooterLinks } from './footer-links';
+export { default as Footer } from './footer';
+export { default as FooterSocialLinks } from './footer-social-links';

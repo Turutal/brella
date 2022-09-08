@@ -1,0 +1,37 @@
+.footer {
+  &__top-wrapper {
+    display: flex;
+  }
+
+  &--contacts {
+    max-width: 355px;
+    margin-left: auto;
+    font-family: 'Raleway', sans-serif;
+    color: #fff !important;
+    &__title {
+      font-size: 13px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+    &__text {
+      margin-top: 19px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &__input {
+      margin-top: 17px;
+      input {
+        max-width: 350px;
+        padding: 18px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff !important;
+        border: 1px solid #fff;
+        background-color: transparent;
+      }
+    }
+    &__button {
+      padding: 18px;
+    }
+  }
+}

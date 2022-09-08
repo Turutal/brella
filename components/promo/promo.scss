@@ -11,7 +11,7 @@
   }
 
   &__block {
-    width: 515px;
+    max-width: 515px;
   }
 
   &__title {
@@ -31,7 +31,8 @@
   &__input {
     margin-top: 16px;
     input {
-      padding: 20px 90px 20px 20px;
+      max-width: 280px;
+      padding: 20px;
       border-radius: 5px 0 0 5px;
       font-size: 14px;
       font-weight: bold;

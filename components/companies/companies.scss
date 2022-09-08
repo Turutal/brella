@@ -16,7 +16,21 @@
 
   &__slider {
     position: relative;
-    width: 1050px;
-    margin: 0 auto;
+    max-width: 1050px;
+    margin: 75px auto 0;
+  }
+
+  &__button-left {
+    position: absolute;
+    left: -72px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__button-right {
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

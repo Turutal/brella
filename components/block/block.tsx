@@ -15,9 +15,8 @@ const Block = ({ title, subtitle, text, buttonText = '', url }: IProps) => {
         <p className="block__text">{text}</p>
         <button className={`block__button`}>{buttonText}</button>
       </div>
-      <picture>
-        <img src={url} alt="insurance" />
-      </picture>
+
+      <img src={url} alt="insurance" />
     </div>
   );
 };

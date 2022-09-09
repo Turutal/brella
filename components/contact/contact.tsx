@@ -3,9 +3,7 @@ import { Button } from 'components';
 const Contact = () => {
   return (
     <div className="contact__wrapper">
-      <picture>
-        <img src="/images/contact-man.jpg" alt="contact" />
-      </picture>
+      <img src="/images/contact-man.jpg" alt="contact" />
       <div className="contact__block">
         <p className="contact__text">
           Ready to explore Brella’s supplemental health solution?

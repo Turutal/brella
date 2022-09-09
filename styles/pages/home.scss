@@ -33,7 +33,7 @@ body {
   .container {
     padding-top: 126px;
   }
-  picture {
+  img {
     display: none;
   }
 }
@@ -42,13 +42,14 @@ body {
   .container {
     padding: 120px 0 125px;
   }
-  .line {
-    display: block;
-    max-width: 1350px;
-    height: 1px;
-    margin: 0 auto;
-    background-color: rgba(199, 199, 199, 0.37);
-  }
+}
+
+.line {
+  display: block;
+  max-width: 1350px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: rgba(199, 199, 199, 0.37);
 }
 
 .news {
@@ -64,4 +65,8 @@ body {
 footer {
   padding: 100px 0 50px;
   background-color: #214e41;
+  .line {
+    margin-top: 70px;
+    background-color: #fff;
+  }
 }

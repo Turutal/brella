@@ -55,13 +55,14 @@ const Footer = ({
         <p>{policyText}</p>
         <p>{underwrittenText}</p>
         <p>
-          {address} tel:{phoneNumber}
+          {address} <a href="tel:{phoneNumber}">{phoneNumber}</a>
         </p>
       </div>
       <div className="footer__bottom">
         <p>© 2021 Brella Insurance Inc. All Rights Reserved.</p>
         <div>
-          <a href="#">Privacy |</a>
+          <a href="#">Privacy</a>
+          <span className="footer__bottom--pipeline">|</span>
           <a href="#">Terms of Service</a>
         </div>
       </div>

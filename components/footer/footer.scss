@@ -8,30 +8,83 @@
     margin-left: auto;
     font-family: 'Raleway', sans-serif;
     color: #fff !important;
+
     &__title {
       font-size: 13px;
       line-height: 24px;
       text-transform: uppercase;
     }
+
     &__text {
       margin-top: 19px;
       font-size: 14px;
       line-height: 24px;
     }
+
     &__input {
+      display: flex;
       margin-top: 17px;
+      color: #fff !important;
+
       input {
-        max-width: 350px;
-        padding: 18px;
+        width: 100%;
+        padding: 18px 21px;
         font-size: 14px;
         line-height: 24px;
-        color: #fff !important;
+
         border: 1px solid #fff;
         background-color: transparent;
+        border-radius: 5px 0 0 5px;
       }
     }
+
     &__button {
-      padding: 18px;
+      padding: 18px 17px;
+      background-color: #fff;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  &__text {
+    margin-top: 73px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #ffffff;
+
+    p:nth-child(2) {
+      margin-top: 20px;
+    }
+
+    p:last-child {
+      margin-top: 24px;
+    }
+
+    a {
+      margin-left: 15px;
+      color: #fff;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+
+    p,
+    a {
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+
+      color: #ffffff;
+    }
+
+    &--pipeline {
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 24px;
+      color: #fff;
     }
   }
 }

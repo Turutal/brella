@@ -1,0 +1,52 @@
+.brings {
+  background: linear-gradient(
+    90deg,
+    rgba(227, 238, 237, 1) 50%,
+    rgba(182, 233, 241, 1) 50%,
+    rgba(227, 238, 237, 1) 50%,
+    rgba(33, 78, 65, 1) 50%
+  );
+
+  &__title {
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__title-list {
+    width: 385px;
+    background: #e3eeed;
+  }
+
+  &__title-list h3 {
+    margin-top: 18px;
+
+    font-size: 32px;
+    line-height: 42px;
+    color: #43806c;
+    cursor: pointer;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__title-arrow {
+    background-color: #cecece;
+  }
+
+  &__describe-list {
+    width: 488px;
+    font-size: 20px;
+    line-height: 34px;
+    color: #fff;
+    p {
+      margin-bottom: 35px;
+    }
+  }
+}

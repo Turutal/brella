@@ -6,6 +6,7 @@ import {
   Icons,
   Promo,
   Block,
+  Brings,
   About,
   Companies,
   News,
@@ -62,6 +63,58 @@ const Home: NextPage = () => {
               buttonText={'See our plan'}
               text={`Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.`}
               url={'/images/insurance-frame.png'}
+            />
+          </div>
+        </section>
+
+        <section className="brings">
+          <div className="container">
+            <Brings
+              title={'brella brings'}
+              bringsArray={[
+                {
+                  title: 'Customizable benefits',
+                  text: [
+                    'Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic conditions. Employees can select the payout amounts that fit their needs and their budget.',
+                    'Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.',
+                  ],
+                },
+                {
+                  title: 'Paperless install & admin',
+                  text: [
+                    `Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.`,
+                    `Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.`,
+                  ],
+                },
+                {
+                  title: 'Effortless enrollment',
+                  text: [
+                    `Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.`,
+                    `Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.`,
+                  ],
+                },
+                {
+                  title: 'Easy claims experience',
+                  text: [
+                    `Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.`,
+                    `Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.`,
+                  ],
+                },
+                {
+                  title: 'Fast benefit payouts',
+                  text: [
+                    `Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.`,
+                    `Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.`,
+                  ],
+                },
+                {
+                  title: 'Concierge support',
+                  text: [
+                    `Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.`,
+                    `Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.`,
+                  ],
+                },
+              ]}
             />
           </div>
         </section>

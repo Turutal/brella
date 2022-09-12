@@ -7,6 +7,7 @@ export { default as Promo } from './promo';
 export { default as PromoFeatures } from './promo-features';
 export { default as Block } from './block';
 export { default as About } from './about';
+export { default as Brings } from './brings';
 export { default as AboutStat } from './about-stat';
 export { default as Companies } from './companies';
 export { default as News } from './news';

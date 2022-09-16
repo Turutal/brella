@@ -3,42 +3,45 @@
     display: flex;
   }
 
-  &--contacts {
+  &__contacts {
     max-width: 355px;
     margin-left: auto;
     font-family: 'Raleway', sans-serif;
     color: #fff !important;
 
-    &__title {
+    &-title {
       font-size: 13px;
       line-height: 24px;
       text-transform: uppercase;
     }
 
-    &__text {
+    &-text {
       margin-top: 19px;
       font-size: 14px;
       line-height: 24px;
     }
 
-    &__input {
+    &-subscription {
       display: flex;
       margin-top: 17px;
+    }
+
+    &-input {
+      width: 100%;
+      padding: 18px 21px;
+      font-size: 14px;
+      line-height: 24px;
+
+      border: 1px solid #fff;
+      background-color: transparent;
+      border-radius: 5px 0 0 5px;
       color: #fff !important;
-
-      input {
-        width: 100%;
-        padding: 18px 21px;
-        font-size: 14px;
-        line-height: 24px;
-
-        border: 1px solid #fff;
-        background-color: transparent;
-        border-radius: 5px 0 0 5px;
+      &::placeholder {
+        color: #fff;
       }
     }
 
-    &__button {
+    &-button {
       padding: 18px 17px;
       background-color: #fff;
       border-radius: 0 5px 5px 0;
@@ -80,7 +83,7 @@
       color: #ffffff;
     }
 
-    &--pipeline {
+    &-pipeline {
       display: inline-block;
       padding: 0 10px;
       font-size: 24px;

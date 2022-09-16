@@ -34,9 +34,11 @@ body {
 .employers {
   background: url('../../public/images/employers.jpg') center/cover no-repeat;
   height: 522px;
+
   .container {
     padding-top: 126px;
   }
+
   img {
     display: none;
   }
@@ -69,6 +71,7 @@ body {
 footer {
   padding: 100px 0 50px;
   background-color: #214e41;
+
   .line {
     margin-top: 70px;
     background-color: #fff;

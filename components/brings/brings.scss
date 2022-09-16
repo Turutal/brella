@@ -20,11 +20,12 @@
   }
 
   &__title-list {
-    width: 385px;
+    width: 425px;
     background: #e3eeed;
   }
 
-  &__title-list h3 {
+  &__title-item {
+    display: flex;
     margin-top: 18px;
 
     font-size: 32px;
@@ -37,7 +38,11 @@
   }
 
   &__title-arrow {
-    background-color: #cecece;
+    display: none;
+    margin-left: 20px;
+  }
+  &__title-arrow--show {
+    display: block;
   }
 
   &__describe-list {

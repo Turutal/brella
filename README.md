@@ -2,11 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Link to visit
 
-```bash
 
-[brella-turutal.vercel.app](https://brella-turutal.vercel.app/)
+Open: [brella-turutal.vercel.app](https://brella-turutal.vercel.app/)
 
-```
 
 ## Getting Started
 

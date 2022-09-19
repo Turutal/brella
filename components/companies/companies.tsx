@@ -12,7 +12,7 @@ interface IProps {
 }
 
 function SampleNextArrow(props: any) {
-  const { className, style, onClick } = props;
+  const { onClick } = props;
   return (
     <button onClick={onClick} className="companies__button-right">
       <Icons.RightButton />
@@ -21,7 +21,7 @@ function SampleNextArrow(props: any) {
 }
 
 function SamplePrevArrow(props: any) {
-  const { className, style, onClick } = props;
+  const { onClick } = props;
   return (
     <button onClick={onClick} className="companies__button-left">
       <Icons.LeftButton />

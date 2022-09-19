@@ -3,7 +3,7 @@ import { Icons } from 'components';
 
 interface BringsArray {
   title: string;
-  text: [string, string];
+  text: string[];
 }
 
 export interface Data {
@@ -13,7 +13,6 @@ export interface Data {
 
 const Brings = ({ title, bringsArray }: Data) => {
   const [currentSlide, setCurrentSlide] = useState(bringsArray[0]);
-  const [show, setShow] = useState(false);
   return (
     <>
       <h2 className="brings__title">{title}</h2>
@@ -25,18 +24,20 @@ const Brings = ({ title, bringsArray }: Data) => {
                 key={item.title}
                 className="brings__title-item"
                 onMouseMove={() => {
-                  setCurrentSlide(item), setShow(!show);
+                  setCurrentSlide(item);
                 }}
               >
                 {item.title}
+                <span
+                  className={`brings__title-arrow ${
+                    currentSlide.title === item.title
+                      ? 'brings__title-arrow--show'
+                      : ''
+                  }`}
+                >
+                  <Icons.RightButton />
+                </span>
               </h3>
-              <span
-                className={`brings__title-arrow ${
-                  show ? 'brings__title-arrow--show' : ''
-                }`}
-              >
-                <Icons.RightButton />
-              </span>
             </>
           ))}
         </div>

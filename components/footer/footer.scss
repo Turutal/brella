@@ -1,4 +1,11 @@
 .footer {
+  padding: 100px 0 50px;
+  background-color: #214e41;
+
+  .line {
+    margin-top: 70px;
+    background-color: #fff;
+  }
   &__top-wrapper {
     display: flex;
   }

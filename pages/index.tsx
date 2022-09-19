@@ -34,13 +34,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        {/* <Example
-          text="Example Component"
-          component={<Icons.ArrowIcon />}
-          num={100}
-          bool={true}
-          arr={[{ num: 0 }, { num: 1 }, { num: 2 }]}
-        /> */}
         <Header
           component={<Icons.LogoIcon color={'#214E41'} />}
           arr={[
@@ -235,77 +228,73 @@ const Home: NextPage = () => {
         </section>
       </main>
 
-      <footer className="footer">
-        <div className="container">
-          <Footer
-            logoComponent={<Icons.LogoIcon color={'#fff'} />}
-            footerLinksJoin={{
-              title: 'Join Brella',
-              arr: [
-                {
-                  name: 'Our Plan',
-                  id: 1,
-                },
-                {
-                  name: 'Employers',
-                  id: 2,
-                },
-                {
-                  name: 'Brokers',
-                  id: 3,
-                },
-                {
-                  name: 'Members',
-                  id: 4,
-                },
-              ],
-            }}
-            footerLinksCompany={{
-              title: 'Company',
-              arr: [
-                {
-                  name: 'About',
-                  id: 1,
-                },
-                {
-                  name: 'Blog',
-                  id: 2,
-                },
-                {
-                  name: 'Careers',
-                  id: 3,
-                },
-                {
-                  name: 'Contact',
-                  id: 4,
-                },
-              ],
-            }}
-            footerSocialProps={{
-              arr: [
-                { component: <Icons.Linkedin />, id: 1 },
-                { component: <Icons.Twitter />, id: 2 },
-                { component: <Icons.Youtube />, id: 3 },
-              ],
-            }}
-            footerContactTitle={'Get the latest'}
-            footerContactsText={
-              'Sign up to receive benefits news and insights in your inbox once a month.'
-            }
-            footerContactsArrow={<Icons.RightButton />}
-            policyText={
-              'Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.'
-            }
-            underwrittenText={
-              'Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX'
-            }
-            address={
-              'Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at'
-            }
-            phoneNumber={'(844) 987-1070'}
-          />
-        </div>
-      </footer>
+      <Footer
+        logoComponent={<Icons.LogoIcon color={'#fff'} />}
+        footerLinksJoin={{
+          title: 'Join Brella',
+          arr: [
+            {
+              name: 'Our Plan',
+              id: 1,
+            },
+            {
+              name: 'Employers',
+              id: 2,
+            },
+            {
+              name: 'Brokers',
+              id: 3,
+            },
+            {
+              name: 'Members',
+              id: 4,
+            },
+          ],
+        }}
+        footerLinksCompany={{
+          title: 'Company',
+          arr: [
+            {
+              name: 'About',
+              id: 1,
+            },
+            {
+              name: 'Blog',
+              id: 2,
+            },
+            {
+              name: 'Careers',
+              id: 3,
+            },
+            {
+              name: 'Contact',
+              id: 4,
+            },
+          ],
+        }}
+        footerSocialProps={{
+          arr: [
+            { component: <Icons.Linkedin />, id: 1 },
+            { component: <Icons.Twitter />, id: 2 },
+            { component: <Icons.Youtube />, id: 3 },
+          ],
+        }}
+        footerContactTitle={'Get the latest'}
+        footerContactsText={
+          'Sign up to receive benefits news and insights in your inbox once a month.'
+        }
+        footerContactsArrow={<Icons.RightButton />}
+        policyText={
+          'Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.'
+        }
+        underwrittenText={
+          'Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX'
+        }
+        address={
+          'Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at'
+        }
+        phoneNumber={'(844) 987-1070'}
+      />
     </div>
   );
 };

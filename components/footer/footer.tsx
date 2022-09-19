@@ -31,51 +31,53 @@ const Footer = ({
   phoneNumber,
 }: IProps) => {
   return (
-    <>
-      <div className="footer__top-wrapper">
-        <a className="footer__logo" href="#">
-          {logoComponent}
-        </a>
+    <footer className="footer">
+      <div className="container">
+        <div className="footer__top-wrapper">
+          <a className="footer__logo" href="#">
+            {logoComponent}
+          </a>
 
-        <FooterLinks {...footerLinksJoin} />
-        <FooterLinks {...footerLinksCompany} />
+          <FooterLinks {...footerLinksJoin} />
+          <FooterLinks {...footerLinksCompany} />
 
-        <div className="footer__contacts">
-          <b className="footer__contacts-title">{footerContactTitle}</b>
-          <p className="footer__contacts-text">{footerContactsText}</p>
-          <div className="footer__contacts-subscription">
-            <input
-              className="footer__contacts-input"
-              type="text"
-              placeholder="Email*"
-            />
-            <button className="button footer__contacts-button">
-              {footerContactsArrow}
-            </button>
+          <div className="footer__contacts">
+            <b className="footer__contacts-title">{footerContactTitle}</b>
+            <p className="footer__contacts-text">{footerContactsText}</p>
+            <div className="footer__contacts-subscription">
+              <input
+                className="footer__contacts-input"
+                type="text"
+                placeholder="Email*"
+              />
+              <button className="button footer__contacts-button">
+                {footerContactsArrow}
+              </button>
+            </div>
+            <FooterSocialLinks {...footerSocialProps} />
           </div>
-          <FooterSocialLinks {...footerSocialProps} />
+        </div>
+
+        <span className="line"></span>
+
+        <div className="footer__text">
+          <p>{policyText}</p>
+          <p>{underwrittenText}</p>
+          <p>
+            {address} <a href={`tel: ${phoneNumber}`}>{phoneNumber}</a>
+          </p>
+        </div>
+
+        <div className="footer__bottom">
+          <p>© 2021 Brella Insurance Inc. All Rights Reserved.</p>
+          <div>
+            <a href="#">Privacy</a>
+            <span className="footer__bottom-pipeline">|</span>
+            <a href="#">Terms of Service</a>
+          </div>
         </div>
       </div>
-
-      <span className="line"></span>
-
-      <div className="footer__text">
-        <p>{policyText}</p>
-        <p>{underwrittenText}</p>
-        <p>
-          {address} <a href={`tel: ${phoneNumber}`}>{phoneNumber}</a>
-        </p>
-      </div>
-
-      <div className="footer__bottom">
-        <p>© 2021 Brella Insurance Inc. All Rights Reserved.</p>
-        <div>
-          <a href="#">Privacy</a>
-          <span className="footer__bottom-pipeline">|</span>
-          <a href="#">Terms of Service</a>
-        </div>
-      </div>
-    </>
+    </footer>
   );
 };
 
